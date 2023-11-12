@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>책등 계산기</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="header">
+    <h1>📒📙📘책등 계산기📗📕📔</h1>
+  </div>
+  <div class="container">
+    <div id="select-area" class="area">
+      <span class="guide-image">📚</span>
+      <label for="paper-select">종이와 평량을 선택해주세요!</label>
+      <select name="paper" id="paper-select">
+        <option value="무림백상60">무림페이퍼 백상지 60</option>
+        <option value="무림백상70">무림페이퍼 백상지 70</option>
+        <option value="무림백상80" selected>무림페이퍼 백상지 80</option>
+        <option value="무림백상90">무림페이퍼 백상지 90</option>
+        <option value="무림백상100">무림페이퍼 백상지 100</option>
+        <option value="무림스노우80">무림페이퍼 스노우지 80</option>
+        <option value="무림스노우90">무림페이퍼 스노우지 90</option>
+        <option value="무림스노우100">무림페이퍼 스노우지 100</option>
+        <option value="무림스노우120">무림페이퍼 스노우지 120</option>
+        <option value="무림스노우150">무림페이퍼 스노우지 150</option>
+        <option value="한솔뉴플65">한솔제지 뉴플러스(백색) 65</option>
+        <option value="한솔뉴플70">한솔제지 뉴플러스(백색) 70</option>
+        <option value="한솔뉴플80">한솔제지 뉴플러스(백색) 80</option>
+        <option value="한솔뉴플90">한솔제지 뉴플러스(백색) 90</option>
+        <option value="한솔뉴플100">한솔제지 뉴플러스(백색) 100</option>
+      </select>
+    </div>
+    <div id="input-number-area" class="area">
+      <label for="paper-number">쪽수(1-1000):</label>
+      <input type="number" id="paper-number" value="400" name="paper-number" min="1" max="1000" />
+    </div>
+    <button id="result-button" onclick="calc();" type="button">계산하기</button>
+    <div id="result-area" class="area">
+      여기에 결과가 나옵니다.
+    </div>
+  </div>
+
+  <script src="paper.js"></script>
+</body>
+</html>
+
