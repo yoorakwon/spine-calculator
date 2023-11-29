@@ -1,0 +1,99 @@
+/* style.css */
+
+/* 전체 페이지 스타일 */
+  
+  /* PC 버전 */
+  body {
+    /* PC 버전의 body 스타일 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* 배경 이미지 설정 */
+    background-image: url('kuromi.jpg');
+    background-size: cover; /* 화면에 꽉 차게 이미지 크기 조절 */
+    background-position: center; /* 이미지를 가운데 정렬 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
+    /* 다른 배경 스타일 속성 추가 가능 */
+  }
+  /* 모바일 버전 */
+    @media (max-width: 480px) {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px; /* 모바일에서 좀 더 여백 추가 */
+            min-height: 100vh;
+            background-image: url('kuromi_m.jpg'); /* 모바일용 이미지로 변경 */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+    }
+  
+  .container {
+    background-color: white;
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 313.34px
+  }
+  
+  /* 헤더 스타일 */
+  .header {
+    background-color: #d09aff;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  /* 입력 영역 스타일 */
+  .area {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #paper-select,
+  #paper-number {
+    padding: 8px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #a374db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    background-color: #a374db;
+  }
+  
+  #result-area {
+    min-height: 25px;
+    padding: 10px;
+    border: 1px solid #d09aff;
+    border-radius: 5px;
+    width:fit-content;
+    margin: 0 auto; /* 수평 가운데 정렬을 위한 margin 설정 */
+  }

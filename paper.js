@@ -48,7 +48,7 @@ function calc() {
         thickness = 101;
     }
 
-    result = thickness * inputNumber / 2000;
+    result = thickness * inputNumber / 2000 + " mm";
 
     resultElement = document.querySelector('#result-area');
     resultElement.innerText = result;
